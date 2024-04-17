@@ -1,0 +1,181 @@
+body{
+
+    margin-left: 200px;
+	
+	margin-right: 200px;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /*different font */
+}
+
+main{
+
+    margin-left: 0px;
+
+    margin-right: 0px;
+
+}
+
+h1{
+
+    text-align: center; /* align h1 text to centre */
+
+}
+
+ img {
+            width: 100%;
+            height: auto;
+        }
+
+.navbar {
+    height: 100px; 
+    line-height: 100px; 
+    background-color: rgb(209, 0, 0);
+    overflow: hidden;
+	display: flex; /* Use flexbox */
+    justify-content: space-between; /* Spread items evenly */
+
+	
+}
+
+.navbar  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%; /* Take up the entire width */
+    justify-content: space-around; 
+    align-items: center; /* Centre items vertically */
+}
+
+.navbar  li {
+    flex: 1; /* Distribute space evenly among list items */
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 15px; 
+	display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+
+    background-color: white; /* change backgroung colour to white when hovering over */
+	color:rgb(209, 0, 0);
+
+}
+
+.navbar img {
+    height: 100px; /* Make the height of the image match the navbar height */
+    width: auto; 
+	
+}
+
+.section {
+    max-width: 1550px; 
+}
+
+.block {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+.block img {
+    width: 400px; 
+    height: 400px;
+    margin-right: 20px; 
+}
+#big-img { /* first id */
+    width: auto; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+	text-align: center; /* Align the text in the middle */
+    font-size: 32px;
+ 
+}
+
+.text p {
+    font-size: 22px;
+    color: #555;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Squared sans-serif font */
+}
+.text a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; 
+  display: block; 
+  padding: 5px; 
+}
+
+.text a:hover {
+  color: rgb(209, 0, 0); /* Change background color on hover */
+}
+.text ul {
+  padding: 0;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+
+}
+.text li {
+  margin-bottom: 10px; /* Adjust spacing between list items */
+}
+.text ol {
+  padding: 0;
+  margin-left: 500px;
+ 
+}
+
+/* New CSS rule for blocks with black outline */
+.outlineblock {
+    border: 5px solid black; /* Add black border */
+	display: flex;
+    margin-bottom: 20px; 
+}
+.outlineblock img {
+    width: 400px; 
+    height: 400px;
+    margin-right: 20px; 
+}
+#hover img:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+}
+
+.quizanswer {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            border-radius: 50px; 
+            margin: 5px;
+            cursor: pointer;
+        }
+
+ .quizanswer:hover {
+            background-color: grey;
+        }
+		
+.answers-container {
+    display: flex;
+    flex-direction: column; /* sort answers vertically */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.selected {
+    pointer-events: none; /* Disable further clicks */
+}
+#submitBtn {
+    margin-top: 20px; 
+	width:100px;
+	height:70px;
+}
+
+
